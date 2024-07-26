@@ -1,0 +1,6 @@
+[tool.ruff]
+exclude = [".conda"]
+line-length = 79
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

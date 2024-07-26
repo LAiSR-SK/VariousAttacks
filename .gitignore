@@ -1,0 +1,12 @@
+.conda
+.ruff_cache
+__pycache__
+
+# data files
+data/download/*
+!data/download/.gitkeep
+data/model/*.pt
+data/model/*.tar
+
+# log files
+data/log/*.txt
