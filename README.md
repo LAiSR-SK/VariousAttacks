@@ -2,9 +2,9 @@
 # Various Attacks
 ![License](https://img.shields.io/github/license/LAiSR-SK/VariousAttacks) ![Code Style](https://img.shields.io/badge/code_style-Ruff-orange)
 
-Adversarial training (AT) is a defense technique that increases the robustness of neural networks by using adversarial examples in training. Previous AT methods typically use only a single attack generate examples, ignore the roles that different image-classes play in determining final robustness, and do not adapt to changing phases of training. The Various Attacks (VA) method addresses these issues.
+Adversarial training (AT) is a defense technique that increases the robustness of neural networks by using adversarial examples in training. Previous AT methods typically use only a single attack to generate examples, ignore the roles that different image-classes play in determining final robustness, and do not adapt to changing phases of training. The Various Attacks (VA) method addresses these issues.
 
-The VA method increases overall and model and generalization robustness by using class-attack assignments to pair a changing set of attacks with different classes. These assignments are epoch-specific and adjusted throughout training to improve the generalization robustness by increasing the diversity of generated examples while still maximizing loss values. 
+The VA method increases overall model and generalization robustness by using class-attack assignments to pair a changing set of attacks with different classes. These assignments are epoch-specific and adjusted throughout training to improve the generalization robustness by increasing the diversity of generated examples while still maximizing loss values. 
 
 The assignments are determined using two major components. First, Advanced Curriculum Training (ACT) gradually increases relative attack strength while using a variety of attacks to target the most vulnerable classes at each stage. The Class-Attack Assignment (CAA) Algorithm is then utilized at key points in training to assign the strongest attacks to the most vulnerable classes, increasing the lowest image-class robustness values and thus the overall model robustness. 
 
