@@ -2,7 +2,7 @@
 # This code is licensed under the MIT license (see LICENSE.md).
 import torch.nn as nn
 import torch.nn.functional as F
-
+#code reviwed by Samer Khamasieh
 
 class BasicBlock(nn.Module):
     expansion = 1
